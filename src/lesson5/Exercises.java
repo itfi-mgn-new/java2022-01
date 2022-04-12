@@ -17,11 +17,30 @@ public class Exercises {
 	}
 
 	public static Object concat(Object... arrays) {
+		// 1. arrays.length > 0
+		// 2. No null elements inside
+		// 3. All elements are arrays
+		// 4. All elements has the same type
 		// TODO:
 	}
 	
 	// + - * /
 	public static int calc(int x, char op, int y) {
 		// TODO:
+		switch (op) {
+			case '+' : return x + y; 
+			case '-' : return x - y; 
+			case '*' : return x * y; 
+			case '/' :
+				if (y == 0) {
+					throw new IllegalArgumentException("Attempt to divide by zero");
+				}
+				else {
+					return x / y; 
+				}
+			default : 
+				throw new IllegalArgumentException("Illegal op ["+op
+						+"], only '+', '-', '*' and '/' are available");
+		}
 	}
 }
