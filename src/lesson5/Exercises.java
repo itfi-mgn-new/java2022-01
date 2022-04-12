@@ -13,9 +13,15 @@ public class Exercises {
 				(double[])concat(new double[] {2.5,5.5}, 
 							new double[] {1.5,3.5,2.5})
 				)); // [2.5,5.5,1.5,3.5,2.5]
+		System.err.println("Sum="+calc(3,'+',5));	// Sum=8
 	}
 
 	public static Object concat(Object... arrays) {
+		// TODO:
+	}
+	
+	// + - * /
+	public static int calc(int x, char op, int y) {
 		// TODO:
 	}
 }
